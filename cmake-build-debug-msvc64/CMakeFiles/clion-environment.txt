@@ -1,0 +1,4 @@
+ToolSet: 17.0 (local)@D:\vs2022
+Options: msvc.arch=amd64
+
+Options:-DCMAKE_MAKE_PROGRAM=D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe
