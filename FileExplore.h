@@ -21,9 +21,9 @@ public:
 
     virtual TopoDS_Shape Input() = 0;
 
-    virtual void Output(SMESH_Gen *gen) = 0;
+    virtual void Output(std::shared_ptr<SMESH_Gen> genPtr) = 0;
 
-    virtual void Output(SMESH_Mesh *mesh) = 0;
+    virtual void Output(std::shared_ptr<SMESH_Mesh> meshPtr) = 0;
 
 protected:
     std::string fileName;
@@ -46,5 +46,23 @@ class Unv : public FileExplore {
 public:
     explicit Unv(std::string_view fileName) : FileExplore(fileName) {}
 
-    void Output(SMESH_Mesh *mesh) override;
+    void Output(std::shared_ptr<SMESH_Mesh> meshPtr) override;
+};
+
+class StlAscii : public FileExplore {
+public:
+    explicit StlAscii(std::string_view fileName) : FileExplore(fileName) {}
+
+    TopoDS_Shape Input() override;
+
+    void Output(std::shared_ptr<SMESH_Mesh> meshPtr) override;
+};
+
+class StlBin : public FileExplore {
+public:
+    explicit StlBin(std::string_view fileName) : FileExplore(fileName) {}
+
+    TopoDS_Shape Input() override;
+
+    void Output(std::shared_ptr<SMESH_Mesh> meshPtr) override;
 };

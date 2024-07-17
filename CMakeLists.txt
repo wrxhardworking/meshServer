@@ -101,7 +101,10 @@ add_executable(${PROJECT_NAME} main.cpp ${SRC_LIST}
         MyException.h
         ShapeExplore.cpp
         ShapeExplore.h
-        MyLog.h)
+        MyLog.h
+        MeshExplore.h
+        MeshExplore.cpp
+)
 # 链接动态库
 target_link_libraries(${PROJECT_NAME}
         #        ${GMSHEngine_LIB}

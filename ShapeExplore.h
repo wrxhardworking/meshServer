@@ -17,9 +17,12 @@ class ShapeExplore {
 public:
     explicit ShapeExplore(TopoDS_Shape &shape);
 
+    //
+    TopoDS_Shape &GetTopoDSShape() { return shape; }
+
 private:
     //输出几何体详细信息
-    void ShowShapeInfo(std::ostream &os);
+    void ShowShapeInfo(Standard_OStream &os);
 
     //打印shape类型
     void LogShapeType();

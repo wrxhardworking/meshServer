@@ -30,6 +30,23 @@ TopoDS_Shape Step::Input() {
     return shape;
 }
 
-void Unv::Output(SMESH_Mesh *mesh) {
-    mesh->ExportUNV(fileName.c_str());
+void Unv::Output(std::shared_ptr<SMESH_Mesh> meshPtr) {
+    meshPtr->ExportUNV(fileName.c_str());
+}
+
+
+void StlAscii::Output(std::shared_ptr<SMESH_Mesh> meshPtr) {
+    meshPtr->ExportSTL(fileName.c_str(), true);
+}
+
+TopoDS_Shape StlAscii::Input() {
+    return TopoDS_Shape();
+}
+
+TopoDS_Shape StlBin::Input() {
+    return TopoDS_Shape();
+}
+
+void StlBin::Output(std::shared_ptr<SMESH_Mesh> meshPtr) {
+    meshPtr->ExportSTL(fileName.c_str(), false);
 }

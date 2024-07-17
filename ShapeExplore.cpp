@@ -14,7 +14,9 @@
 #include <utility>
 
 ShapeExplore::ShapeExplore(TopoDS_Shape &shape) : shape(std::move(shape)) {
-    LogShapeType();
+    if (!shape.IsNull())
+        LogShapeType();
+
 }
 
 void ShapeExplore::LogShapeType() {
