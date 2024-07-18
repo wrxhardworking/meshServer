@@ -1,5 +1,11 @@
 # ninja log v5
-45	3377	7428257651326088	CMakeFiles/MyProject.dir/FileExplore.cpp.obj	1344908caf45a775
-82	2168	7428271380164645	CMakeFiles/MyProject.dir/ShapeExplore.cpp.obj	9365159d532ab0c7
-84	11825	7428275676062861	CMakeFiles/MyProject.dir/main.cpp.obj	130d10c20f998cb2
-11826	12468	7428275681337439	MyProject.exe	526fa69c2bfda8a9
+26	3027	7429863748022265	CMakeFiles/MyProject.dir/FileExplore.cpp.obj	1cc35e1fd4541124
+20	226	7429965323832921	CMakeFiles/MyProject.dir/test/client_test.cpp.obj	5c22bb4ea63fac8f
+35	2679	7429863744079440	CMakeFiles/MyProject.dir/ShapeExplore.cpp.obj	d5d0048e3fc0deb7
+24	1761	7429964946400569	CMakeFiles/MyProject.dir/main.cpp.obj	4d8f1717683169cf
+45	2731	7429863745007243	CMakeFiles/MyProject.dir/MeshExplore.cpp.obj	b67457e56d92979
+227	1652	7429965329054845	MyProject.exe	748ae00714ec2028
+1	3101	7429997840072194	build.ninja	e12370bb919794bd
+40	3728	7430263530819109	CMakeFiles/MyProject.dir/mycontext.cpp.obj	712fca839ba2b6ae
+227	3753	7430263531030335	CMakeFiles/MyProject.dir/server.cpp.obj	cdd251de14684966
+3753	7830	7430263552386103	MyProject.exe	aeafd3a83f9b5b36

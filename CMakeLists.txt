@@ -5,10 +5,12 @@ project(MyProject)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+
 # 设置MyLibrary的路径
 set(MYLIBRARY_DIR "D:\\conda\\pkgs\\smesh-9.9.0.0-h27babe3_8\\Library")
-option(ENABLE_NETGEN "Enable Netgen" ON)
 
+option(ENABLE_NETGEN "Enable Netgen" ON)
+option(ENABLE_TEST "enable test" ON)
 
 add_definitions(-D_USE_MATH_DEFINES)
 
@@ -60,6 +62,12 @@ if (OpenCASCADE_FOUND)
     message("find successful")
 endif ()
 
+#libhv
+find_package(libhv CONFIG)
+if (libhv_FOUND)
+    message("find successful")
+endif ()
+
 #freeimage
 find_library(freeimage NAMES FreeImage PATHS D:\\conda\\pkgs\\freeimage-3.18.0-h30d40d2_12\\Library\\lib)
 if (NOT freeimage)
@@ -104,6 +112,11 @@ add_executable(${PROJECT_NAME} main.cpp ${SRC_LIST}
         MyLog.h
         MeshExplore.h
         MeshExplore.cpp
+        test/client_test.cpp
+        mycontext.cpp
+        mycontext.h
+        server.cpp
+        server.h
 )
 # 链接动态库
 target_link_libraries(${PROJECT_NAME}
@@ -130,6 +143,7 @@ target_link_libraries(${PROJECT_NAME}
         ${VTK_LIBRARIES}
         ${Boost_LIBRARIES}
         ${OpenCASCADE_LIBRARIES}
+        hv
 )
 
 # 将DLL文件复制到输出目录
@@ -137,3 +151,6 @@ target_link_libraries(${PROJECT_NAME}
 #        COMMAND ${CMAKE_COMMAND} -E copy_if_different
 #        ${MYLIBRARY_DIR}/lib/MyLibrary.dll
 #        $<TARGET_FILE_DIR:MyExecutable>)
+#if (ENABLE_TEST)
+#    add_subdirectory(${PROJECT_SOURCE_DIR}/test)
+#endif ()

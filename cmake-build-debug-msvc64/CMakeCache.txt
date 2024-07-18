@@ -199,6 +199,9 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 // during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=D:\vcpkg\scripts\buildsystems\vcpkg.cmake
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -211,6 +214,9 @@ DUMPBIN_EXECUTABLE:FILEPATH=D:/vs2022/VC/Tools/MSVC/14.30.30705/bin/Hostx64/x64/
 //Enable Netgen
 ENABLE_NETGEN:BOOL=ON
 
+//enable test
+ENABLE_TEST:BOOL=ON
+
 //Path to a file.
 EXPAT_INCLUDE_DIR:PATH=D:/conda/Library/include
 
@@ -220,17 +226,8 @@ EXPAT_LIBRARY:FILEPATH=D:/conda/Library/lib/expat.lib
 //Eigen include directory
 Eigen3_INCLUDE_DIR:PATH=D:/conda/Library/include/eigen3
 
-//Path to a file.
-FREETYPE_INCLUDE_DIR_freetype2:PATH=D:/conda/Library/include
-
-//Path to a file.
-FREETYPE_INCLUDE_DIR_ft2build:PATH=D:/conda/Library/include
-
-//Path to a library.
-FREETYPE_LIBRARY_DEBUG:FILEPATH=FREETYPE_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-FREETYPE_LIBRARY_RELEASE:FILEPATH=D:/conda/Library/lib/freetype.lib
+//The directory containing a CMake configuration file for Freetype.
+Freetype_DIR:PATH=D:/vcpkg/installed/x64-windows/share/freetype
 
 //gl2ps include directories
 GL2PS_INCLUDE_DIR:PATH=D:/conda/Library/include
@@ -314,13 +311,13 @@ ICU_UC_LIBRARY_DEBUG:FILEPATH=ICU_UC_LIBRARY_DEBUG-NOTFOUND
 ICU_UC_LIBRARY_RELEASE:FILEPATH=D:/Windows Kits/10/Lib/10.0.19041.0/um/x64/icuuc.lib
 
 //Path to a file.
-JPEG_INCLUDE_DIR:PATH=D:/conda/Library/include
+JPEG_INCLUDE_DIR:PATH=D:/vcpkg/installed/x64-windows/include
 
 //Path to a library.
-JPEG_LIBRARY_DEBUG:FILEPATH=JPEG_LIBRARY_DEBUG-NOTFOUND
+JPEG_LIBRARY_DEBUG:FILEPATH=D:/vcpkg/installed/x64-windows/debug/lib/jpeg.lib
 
 //Path to a library.
-JPEG_LIBRARY_RELEASE:FILEPATH=D:/conda/Library/lib/jpeg.lib
+JPEG_LIBRARY_RELEASE:FILEPATH=D:/vcpkg/installed/x64-windows/lib/jpeg.lib
 
 //jsoncpp include directory
 JsonCpp_INCLUDE_DIR:PATH=D:/conda/Library/include
@@ -344,10 +341,10 @@ LZ4_INCLUDE_DIR:PATH=D:/conda/Library/include
 LZ4_LIBRARY:FILEPATH=D:/conda/Library/lib/liblz4.lib
 
 //lzma include directory
-LZMA_INCLUDE_DIR:PATH=D:/conda/Library/include
+LZMA_INCLUDE_DIR:PATH=D:/vcpkg/installed/x64-windows/include
 
 //lzma library
-LZMA_LIBRARY:FILEPATH=D:/conda/Library/lib/liblzma.lib
+LZMA_LIBRARY:FILEPATH=D:/vcpkg/installed/x64-windows/debug/lib/lzma.lib
 
 //libproj include directories
 LibPROJ_INCLUDE_DIR:PATH=D:/conda/Library/include
@@ -386,22 +383,22 @@ OpenCASCADE_DIR:PATH=D:/conda/pkgs/occt-7.7.2-all_h165458f_201/Library/lib/cmake
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+PKG_CONFIG_EXECUTABLE:FILEPATH=D:/vcpkg/installed/x64-windows/tools/pkgconf/pkgconf.exe
 
 //Path to a library.
-PNG_LIBRARY_DEBUG:FILEPATH=PNG_LIBRARY_DEBUG-NOTFOUND
+PNG_LIBRARY_DEBUG:FILEPATH=D:/vcpkg/installed/x64-windows/debug/lib/libpng16d.lib
 
 //Path to a library.
-PNG_LIBRARY_RELEASE:FILEPATH=D:/conda/Library/lib/libpng.lib
+PNG_LIBRARY_RELEASE:FILEPATH=D:/vcpkg/installed/x64-windows/lib/libpng16.lib
 
 //Path to a file.
-PNG_PNG_INCLUDE_DIR:PATH=D:/conda/Library/include
+PNG_PNG_INCLUDE_DIR:PATH=D:/vcpkg/installed/x64-windows/include
 
 //Path to a file.
-SQLite3_INCLUDE_DIR:PATH=D:/conda/Library/include
+SQLite3_INCLUDE_DIR:PATH=D:/vcpkg/installed/x64-windows/include
 
 //Path to a library.
-SQLite3_LIBRARY:FILEPATH=D:/conda/Library/lib/sqlite3.lib
+SQLite3_LIBRARY:FILEPATH=D:/vcpkg/installed/x64-windows/debug/lib/sqlite3.lib
 
 //The directory containing a CMake configuration file for TBB.
 TBB_DIR:PATH=D:/conda/Library/lib/cmake/TBB
@@ -427,29 +424,84 @@ TIFF_LIBRARY_DEBUG:FILEPATH=TIFF_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 TIFF_LIBRARY_RELEASE:FILEPATH=D:/conda/Library/lib/tiff.lib
 
+//Automatically copy dependencies into the output directory for
+// executables.
+VCPKG_APPLOCAL_DEPS:BOOL=ON
+
+//The directory which contains the installed libraries for each
+// triplet
+VCPKG_INSTALLED_DIR:PATH=D:/vcpkg/installed
+
+//The path to the vcpkg manifest directory.
+VCPKG_MANIFEST_DIR:PATH=
+
+//Use manifest mode, as opposed to classic mode.
+VCPKG_MANIFEST_MODE:BOOL=OFF
+
+//Appends the vcpkg paths to CMAKE_PREFIX_PATH, CMAKE_LIBRARY_PATH
+// and CMAKE_FIND_ROOT_PATH so that vcpkg libraries/packages are
+// found after toolchain/system libraries/packages.
+VCPKG_PREFER_SYSTEM_LIBS:BOOL=OFF
+
+//Enable the setup of CMAKE_PROGRAM_PATH to vcpkg paths
+VCPKG_SETUP_CMAKE_PROGRAM_PATH:BOOL=ON
+
+//Vcpkg target triplet (ex. x86-windows)
+VCPKG_TARGET_TRIPLET:STRING=x64-windows
+
+//Trace calls to find_package()
+VCPKG_TRACE_FIND_PACKAGE:BOOL=OFF
+
+//Enables messages from the VCPKG toolchain for debugging purposes.
+VCPKG_VERBOSE:BOOL=OFF
+
 //The directory containing a CMake configuration file for VTK.
 VTK_DIR:PATH=D:/conda/Library/lib/cmake/vtk-9.2
 
+//(experimental) Automatically copy dependencies into the install
+// target directory for executables. Requires CMake 3.14.
+X_VCPKG_APPLOCAL_DEPS_INSTALL:BOOL=OFF
+
+//(experimental) Add USES_TERMINAL to VCPKG_APPLOCAL_DEPS to force
+// serialization.
+X_VCPKG_APPLOCAL_DEPS_SERIALIZED:BOOL=OFF
+
 //Path to a file.
-ZLIB_INCLUDE_DIR:PATH=D:/conda/Library/include
+ZLIB_INCLUDE_DIR:PATH=D:/vcpkg/installed/x64-windows/include
 
 //Path to a library.
-ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
+ZLIB_LIBRARY_DEBUG:FILEPATH=D:/vcpkg/installed/x64-windows/debug/lib/zlibd.lib
 
 //Path to a library.
-ZLIB_LIBRARY_RELEASE:FILEPATH=D:/conda/Library/lib/z.lib
+ZLIB_LIBRARY_RELEASE:FILEPATH=D:/vcpkg/installed/x64-windows/lib/zlib.lib
+
+//Path to a program.
+Z_VCPKG_BUILTIN_POWERSHELL_PATH:FILEPATH=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
+
+//Path to a program.
+Z_VCPKG_CL:FILEPATH=D:/vs2022/VC/Tools/MSVC/14.30.30705/bin/Hostx64/x64/cl.exe
+
+//Path to a program.
+Z_VCPKG_PWSH_PATH:FILEPATH=Z_VCPKG_PWSH_PATH-NOTFOUND
+
+//The directory which contains the installed libraries for each
+// triplet
+_VCPKG_INSTALLED_DIR:PATH=D:/vcpkg/installed
 
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=E:/boost/boost_1_85_0/stage/lib/cmake/boost_headers-1.85.0
 
 //double-conversion include directory
-double-conversion_INCLUDE_DIR:PATH=D:/conda/Library/include/double-conversion
+double-conversion_INCLUDE_DIR:PATH=D:/vcpkg/installed/x64-windows/include/double-conversion
 
 //double-conversion library
-double-conversion_LIBRARY:FILEPATH=D:/conda/Library/lib/double-conversion.lib
+double-conversion_LIBRARY:FILEPATH=D:/vcpkg/installed/x64-windows/debug/lib/double-conversion.lib
 
 //Path to a library.
 freeimage:FILEPATH=D:/conda/Library/lib/FreeImage.lib
+
+//The directory containing a CMake configuration file for libhv.
+libhv_DIR:PATH=D:/vcpkg/installed/x64-windows/share/libhv
 
 //The directory containing a CMake configuration file for netCDF.
 netCDF_DIR:PATH=D:/conda/Library/lib/cmake/netCDF
@@ -606,6 +658,8 @@ CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_TOOLCHAIN_FILE
+CMAKE_TOOLCHAIN_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DUMPBIN_EXECUTABLE
@@ -622,8 +676,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[E:/boost/boost_1_85_0/stage/lib/cma
 FIND_PACKAGE_MESSAGE_DETAILS_EXPAT:INTERNAL=[D:/conda/Library/lib/expat.lib][D:/conda/Library/include][v2.6.2()]
 //Details about finding Eigen3
 FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[D:/conda/Library/include/eigen3][v3.4.0()]
-//Details about finding Freetype
-FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[D:/conda/Library/lib/freetype.lib][D:/conda/Library/include][v2.12.1()]
 //Details about finding GL2PS
 FIND_PACKAGE_MESSAGE_DETAILS_GL2PS:INTERNAL=[D:/conda/Library/lib/gl2ps.lib][D:/conda/Library/include][v1.4.2(1.4.2)]
 //Details about finding GLEW
@@ -631,13 +683,13 @@ FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[D:/conda/Library/lib/glew32.lib][D:/
 //Details about finding HDF5
 FIND_PACKAGE_MESSAGE_DETAILS_HDF5:INTERNAL=[hdf5-shared][D:/conda/Library/include][cfound components: C HL ][v1.12.2()]
 //Details about finding JPEG
-FIND_PACKAGE_MESSAGE_DETAILS_JPEG:INTERNAL=[D:/conda/Library/lib/jpeg.lib][D:/conda/Library/include][v90()]
+FIND_PACKAGE_MESSAGE_DETAILS_JPEG:INTERNAL=[optimized;D:/vcpkg/installed/x64-windows/lib/jpeg.lib;debug;D:/vcpkg/installed/x64-windows/debug/lib/jpeg.lib][D:/vcpkg/installed/x64-windows/include][v62()]
 //Details about finding JsonCpp
 FIND_PACKAGE_MESSAGE_DETAILS_JsonCpp:INTERNAL=[D:/conda/Library/lib/jsoncpp.lib][D:/conda/Library/include][v1.9.5(0.7.0)]
 //Details about finding LZ4
 FIND_PACKAGE_MESSAGE_DETAILS_LZ4:INTERNAL=[D:/conda/Library/lib/liblz4.lib][D:/conda/Library/include][v1.9.4()]
 //Details about finding LZMA
-FIND_PACKAGE_MESSAGE_DETAILS_LZMA:INTERNAL=[D:/conda/Library/lib/liblzma.lib][D:/conda/Library/include][v5.4.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_LZMA:INTERNAL=[D:/vcpkg/installed/x64-windows/debug/lib/lzma.lib][D:/vcpkg/installed/x64-windows/include][v5.4.4()]
 //Details about finding LibPROJ
 FIND_PACKAGE_MESSAGE_DETAILS_LibPROJ:INTERNAL=[D:/conda/Library/lib/proj.lib][D:/conda/Library/include][v9.1.1()]
 //Details about finding LibXml2
@@ -649,11 +701,11 @@ FIND_PACKAGE_MESSAGE_DETAILS_OGG:INTERNAL=[D:/conda/Library/lib/ogg.lib][D:/cond
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][cfound components: OpenGL ][v()]
 //Details about finding PNG
-FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[D:/conda/Library/lib/libpng.lib][D:/conda/Library/include][v1.6.43()]
+FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[optimized;D:/vcpkg/installed/x64-windows/lib/libpng16.lib;debug;D:/vcpkg/installed/x64-windows/debug/lib/libpng16d.lib][D:/vcpkg/installed/x64-windows/include][v1.6.40()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[D:/conda/python.exe][D:/conda/libs/python311.lib][D:/conda/include][cfound components: Interpreter Development.Module Development.Embed ][v3.11.5(3.11)]
 //Details about finding SQLite3
-FIND_PACKAGE_MESSAGE_DETAILS_SQLite3:INTERNAL=[D:/conda/Library/include][D:/conda/Library/lib/sqlite3.lib][v3.46.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_SQLite3:INTERNAL=[D:/vcpkg/installed/x64-windows/include][D:/vcpkg/installed/x64-windows/debug/lib/sqlite3.lib][v3.45.1()]
 //Details about finding THEORA
 FIND_PACKAGE_MESSAGE_DETAILS_THEORA:INTERNAL=[D:/conda/Library/lib/theora.lib][D:/conda/Library/lib/theoraenc.lib][D:/conda/Library/lib/theoradec.lib][D:/conda/Library/include][v()]
 //Details about finding TIFF
@@ -661,21 +713,21 @@ FIND_PACKAGE_MESSAGE_DETAILS_TIFF:INTERNAL=[D:/conda/Library/lib/tiff.lib][D:/co
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
-FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[D:/conda/Library/lib/z.lib][D:/conda/Library/include][c ][v1.3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[optimized;D:/vcpkg/installed/x64-windows/lib/zlib.lib;debug;D:/vcpkg/installed/x64-windows/debug/lib/zlibd.lib][D:/vcpkg/installed/x64-windows/include][c ][v1.3.1()]
 //Details about finding double-conversion
-FIND_PACKAGE_MESSAGE_DETAILS_double-conversion:INTERNAL=[D:/conda/Library/lib/double-conversion.lib][D:/conda/Library/include/double-conversion][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_double-conversion:INTERNAL=[D:/vcpkg/installed/x64-windows/debug/lib/double-conversion.lib][D:/vcpkg/installed/x64-windows/include/double-conversion][v()]
 //Details about finding nlohmann_json
 FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[D:/conda/Library/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.11.3()]
 //Details about finding utf8cpp
 FIND_PACKAGE_MESSAGE_DETAILS_utf8cpp:INTERNAL=[D:/conda/Library/include][v()]
-//ADVANCED property for variable: FREETYPE_INCLUDE_DIR_freetype2
-FREETYPE_INCLUDE_DIR_freetype2-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: FREETYPE_INCLUDE_DIR_ft2build
-FREETYPE_INCLUDE_DIR_ft2build-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FREETYPE_LIBRARY_DEBUG
 FREETYPE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//vcpkg
+FREETYPE_LIBRARY_DEBUG:INTERNAL=D:/vcpkg/installed/x64-windows/debug/lib/freetyped.lib
 //ADVANCED property for variable: FREETYPE_LIBRARY_RELEASE
 FREETYPE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//vcpkg
+FREETYPE_LIBRARY_RELEASE:INTERNAL=D:/vcpkg/installed/x64-windows/lib/freetype.lib
 //ADVANCED property for variable: GL2PS_INCLUDE_DIR
 GL2PS_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GL2PS_LIBRARY
@@ -781,6 +833,10 @@ PC_EXPAT_STATIC_LIBS_L:INTERNAL=
 PC_EXPAT_STATIC_LIBS_OTHER:INTERNAL=
 PC_EXPAT_STATIC_LIBS_PATHS:INTERNAL=
 PC_EXPAT_VERSION:INTERNAL=
+PC_EXPAT_expat_INCLUDEDIR:INTERNAL=
+PC_EXPAT_expat_LIBDIR:INTERNAL=
+PC_EXPAT_expat_PREFIX:INTERNAL=
+PC_EXPAT_expat_VERSION:INTERNAL=
 PC_LIBXML_CFLAGS:INTERNAL=
 PC_LIBXML_CFLAGS_I:INTERNAL=
 PC_LIBXML_CFLAGS_OTHER:INTERNAL=
@@ -802,6 +858,10 @@ PC_LIBXML_STATIC_LIBS_L:INTERNAL=
 PC_LIBXML_STATIC_LIBS_OTHER:INTERNAL=
 PC_LIBXML_STATIC_LIBS_PATHS:INTERNAL=
 PC_LIBXML_VERSION:INTERNAL=
+PC_LIBXML_libxml-2.0_INCLUDEDIR:INTERNAL=
+PC_LIBXML_libxml-2.0_LIBDIR:INTERNAL=
+PC_LIBXML_libxml-2.0_PREFIX:INTERNAL=
+PC_LIBXML_libxml-2.0_VERSION:INTERNAL=
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
@@ -830,6 +890,14 @@ TIFF_INCLUDE_DIR-ADVANCED:INTERNAL=1
 TIFF_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: TIFF_LIBRARY_RELEASE
 TIFF_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//Install the dependencies listed in your manifest:
+//\n    If this is off, you will have to manually install your dependencies.
+//\n    See https://github.com/microsoft/vcpkg/tree/master/docs/specifications/manifests.md
+// for more info.
+//\n
+VCPKG_MANIFEST_INSTALL:INTERNAL=OFF
+//ADVANCED property for variable: VCPKG_VERBOSE
+VCPKG_VERBOSE-ADVANCED:INTERNAL=1
 //Number of processors available to run parallel tests.
 VTK_MPI_NUMPROCS:INTERNAL=2
 //ADVANCED property for variable: ZLIB_INCLUDE_DIR
@@ -838,6 +906,12 @@ ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY_RELEASE
 ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//Making sure VCPKG_MANIFEST_MODE doesn't change
+Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=OFF
+//The path to the PowerShell implementation to use.
+Z_VCPKG_POWERSHELL_PATH:INTERNAL=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
+//Vcpkg root directory
+Z_VCPKG_ROOT_DIR:INTERNAL=D:/vcpkg
 //Compiler reason failure
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 _Python3_DEVELOPMENT_EMBED_SIGNATURE:INTERNAL=7997477866b2a201502bf14213fa1ed6

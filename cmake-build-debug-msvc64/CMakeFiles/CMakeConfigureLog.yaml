@@ -109,21 +109,24 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-fcfqc2"
-      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-fcfqc2"
+      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-zgta8k"
+      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-zgta8k"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-fcfqc2'
+        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-zgta8k'
         
-        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_5641a
-        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5641a.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_5641a.dir\\ /FS -c D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c
-        [2/2] cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_5641a.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5641a.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_5641a.exe /implib:cmTC_5641a.lib /pdb:cmTC_5641a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_35676
+        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_35676.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_35676.dir\\ /FS -c D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c
+        [2/2] cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_35676.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_35676.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_35676.exe /implib:cmTC_35676.lib /pdb:cmTC_35676.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-zgta8k && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-zgta8k/cmTC_35676.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
         
       exitCode: 0
   -
@@ -135,21 +138,24 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ngzrr8"
-      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ngzrr8"
+      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ou8999"
+      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ou8999"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ngzrr8'
+        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ou8999'
         
-        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_fa3cf
-        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_fa3cf.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_fa3cf.dir\\ /FS -c D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_fa3cf.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_fa3cf.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_fa3cf.exe /implib:cmTC_fa3cf.lib /pdb:cmTC_fa3cf.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_e8c02
+        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_e8c02.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_e8c02.dir\\ /FS -c D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e8c02.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e8c02.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_e8c02.exe /implib:cmTC_e8c02.lib /pdb:cmTC_e8c02.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-ou8999 && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ou8999/cmTC_e8c02.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
         
       exitCode: 0
   -
@@ -159,30 +165,35 @@ events:
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
       - "D:/conda/Library/lib/cmake/vtk-9.2/VTK-vtk-module-find-packages.cmake:162 (find_package)"
       - "D:/conda/Library/lib/cmake/vtk-9.2/vtk-config.cmake:152 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
       - "CMakeLists.txt:50 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-bmbvn4"
-      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-bmbvn4"
+      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-o3nnku"
+      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-o3nnku"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "D:/conda/Library/lib/cmake/vtk-9.2/patches/99;D:/conda/Library/lib/cmake/vtk-9.2"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-bmbvn4'
+        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-o3nnku'
         
-        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_96262
-        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_96262.dir\\src.c.obj /FdCMakeFiles\\cmTC_96262.dir\\ /FS -c D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-bmbvn4\\src.c
-        FAILED: CMakeFiles/cmTC_96262.dir/src.c.obj 
-        D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_96262.dir\\src.c.obj /FdCMakeFiles\\cmTC_96262.dir\\ /FS -c D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-bmbvn4\\src.c
-        D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-bmbvn4\\src.c(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory
+        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_28a70
+        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_28a70.dir\\src.c.obj /FdCMakeFiles\\cmTC_28a70.dir\\ /FS -c D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-o3nnku\\src.c
+        FAILED: CMakeFiles/cmTC_28a70.dir/src.c.obj 
+        D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_28a70.dir\\src.c.obj /FdCMakeFiles\\cmTC_28a70.dir\\ /FS -c D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-o3nnku\\src.c
+        D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-o3nnku\\src.c(1): fatal error C1083: 无法打开包括文件: “pthread.h”: No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -192,31 +203,36 @@ events:
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
       - "D:/conda/Library/lib/cmake/vtk-9.2/VTK-vtk-module-find-packages.cmake:162 (find_package)"
       - "D:/conda/Library/lib/cmake/vtk-9.2/vtk-config.cmake:152 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
       - "CMakeLists.txt:50 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-k78xzv"
-      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-k78xzv"
+      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-97ckyh"
+      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-97ckyh"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "D:/conda/Library/lib/cmake/vtk-9.2/patches/99;D:/conda/Library/lib/cmake/vtk-9.2"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-k78xzv'
+        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-97ckyh'
         
-        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_5f82f
-        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5f82f.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_5f82f.dir\\ /FS -c D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-k78xzv\\CheckFunctionExists.c
-        [2/2] cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_5f82f.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5f82f.dir\\CheckFunctionExists.c.obj  /out:cmTC_5f82f.exe /implib:cmTC_5f82f.lib /pdb:cmTC_5f82f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_5f82f.exe 
-        cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_5f82f.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5f82f.dir\\CheckFunctionExists.c.obj  /out:cmTC_5f82f.exe /implib:cmTC_5f82f.lib /pdb:cmTC_5f82f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_5f82f.dir\\CheckFunctionExists.c.obj /out:cmTC_5f82f.exe /implib:cmTC_5f82f.lib /pdb:cmTC_5f82f.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_5f82f.dir/intermediate.manifest CMakeFiles\\cmTC_5f82f.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_63e04
+        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_63e04.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_63e04.dir\\ /FS -c D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-97ckyh\\CheckFunctionExists.c
+        [2/2] cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_63e04.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_63e04.dir\\CheckFunctionExists.c.obj  /out:cmTC_63e04.exe /implib:cmTC_63e04.lib /pdb:cmTC_63e04.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-97ckyh && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-97ckyh/cmTC_63e04.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        FAILED: cmTC_63e04.exe 
+        cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_63e04.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_63e04.dir\\CheckFunctionExists.c.obj  /out:cmTC_63e04.exe /implib:cmTC_63e04.lib /pdb:cmTC_63e04.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-97ckyh && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-97ckyh/cmTC_63e04.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        LINK Pass 1: command "D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_63e04.dir\\CheckFunctionExists.c.obj /out:cmTC_63e04.exe /implib:cmTC_63e04.lib /pdb:cmTC_63e04.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_63e04.dir/intermediate.manifest CMakeFiles\\cmTC_63e04.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: 无法打开文件“pthreads.lib”
         ninja: build stopped: subcommand failed.
         
@@ -227,31 +243,36 @@ events:
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
       - "D:/jet/apps/CLion/ch-0/233.14475.31/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
       - "D:/conda/Library/lib/cmake/vtk-9.2/VTK-vtk-module-find-packages.cmake:162 (find_package)"
       - "D:/conda/Library/lib/cmake/vtk-9.2/vtk-config.cmake:152 (include)"
+      - "D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
       - "CMakeLists.txt:50 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-mh1pbf"
-      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-mh1pbf"
+      source: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ttwrve"
+      binary: "D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ttwrve"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "D:/conda/Library/lib/cmake/vtk-9.2/patches/99;D:/conda/Library/lib/cmake/vtk-9.2"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "D:/vcpkg"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-mh1pbf'
+        Change Dir: 'D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ttwrve'
         
-        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_e0642
-        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_e0642.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_e0642.dir\\ /FS -c D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-mh1pbf\\CheckFunctionExists.c
-        [2/2] cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e0642.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e0642.dir\\CheckFunctionExists.c.obj  /out:cmTC_e0642.exe /implib:cmTC_e0642.lib /pdb:cmTC_e0642.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_e0642.exe 
-        cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_e0642.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e0642.dir\\CheckFunctionExists.c.obj  /out:cmTC_e0642.exe /implib:cmTC_e0642.lib /pdb:cmTC_e0642.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e0642.dir\\CheckFunctionExists.c.obj /out:cmTC_e0642.exe /implib:cmTC_e0642.lib /pdb:cmTC_e0642.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_e0642.dir/intermediate.manifest CMakeFiles\\cmTC_e0642.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -v cmTC_c0e77
+        [1/2] D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c0e77.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_c0e77.dir\\ /FS -c D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-ttwrve\\CheckFunctionExists.c
+        [2/2] cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_c0e77.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c0e77.dir\\CheckFunctionExists.c.obj  /out:cmTC_c0e77.exe /implib:cmTC_c0e77.lib /pdb:cmTC_c0e77.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-ttwrve && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ttwrve/cmTC_c0e77.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        FAILED: cmTC_c0e77.exe 
+        cmd.exe /C "cd . && D:\\jet\\apps\\CLion\\ch-0\\233.14475.31\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_c0e77.dir --rc=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=D:\\WINDOW~2\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c0e77.dir\\CheckFunctionExists.c.obj  /out:cmTC_c0e77.exe /implib:cmTC_c0e77.lib /pdb:cmTC_c0e77.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cmd.exe /C "cd /D D:\\c++projet\\mesh_pro\\cmake-build-debug-msvc64\\CMakeFiles\\CMakeScratch\\TryCompile-ttwrve && C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -noprofile -executionpolicy Bypass -file D:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/CMakeScratch/TryCompile-ttwrve/cmTC_c0e77.exe -installedDir D:/vcpkg/installed/x64-windows/debug/bin -OutVariable out""
+        LINK Pass 1: command "D:\\vs2022\\VC\\Tools\\MSVC\\14.30.30705\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c0e77.dir\\CheckFunctionExists.c.obj /out:cmTC_c0e77.exe /implib:cmTC_c0e77.lib /pdb:cmTC_c0e77.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c0e77.dir/intermediate.manifest CMakeFiles\\cmTC_c0e77.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: 无法打开文件“pthread.lib”
         ninja: build stopped: subcommand failed.
         

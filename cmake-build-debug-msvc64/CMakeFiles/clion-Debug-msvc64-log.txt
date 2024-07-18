@@ -1,4 +1,4 @@
-D:\jet\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -G Ninja -S D:\c++projet\mesh_pro -B D:\c++projet\mesh_pro\cmake-build-debug-msvc64
+D:\jet\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -DCMAKE_TOOLCHAIN_FILE=D:\vcpkg\scripts\buildsystems\vcpkg.cmake -G Ninja -S D:\c++projet\mesh_pro -B D:\c++projet\mesh_pro\cmake-build-debug-msvc64
 -- Boost_INCLUDE_DIRS = E:/boost/boost_1_85_0.
 -- Boost_LIBRARIES = .
 -- Boost_LIB_VERSION = 1_85.
@@ -8,10 +8,12 @@ CMake Warning (dev) at D:/conda/pkgs/occt-7.7.2-all_h165458f_201/Library/lib/cma
 
   Argument not separated from preceding token by whitespace.
 Call Stack (most recent call first):
-  CMakeLists.txt:57 (find_package)
+  D:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)
+  CMakeLists.txt:59 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 find successful
--- Configuring done (2.9s)
--- Generating done (0.1s)
+find successful
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
 -- Build files have been written to: D:/c++projet/mesh_pro/cmake-build-debug-msvc64

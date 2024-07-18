@@ -30,7 +30,7 @@ void MeshExplore::initAlgoAndHyp() {
     }
 }
 
-//fixme
+//fixme 遇到边面加密该怎么处理
 void MeshExplore::startCompute() {
     meshPtr->ShapeToMesh(shape);
     for (int i = 0; i < count; ++i) {
