@@ -8,7 +8,7 @@
   ******************************************************************************
   */
 
-#include "MeshExplore.h"
+#include "meshexplore.h"
 #include <SMESH_Gen.hxx>
 #include <NETGENPlugin_NETGEN_2D3D.hxx>
 

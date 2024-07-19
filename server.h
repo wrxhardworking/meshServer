@@ -16,7 +16,7 @@ using namespace hv;
 
 class Server {
 public:
-    explicit Server(int port);
+    explicit Server(int port, int threadNum = 4);
 
     //开始服务
     void start();
@@ -25,5 +25,4 @@ private:
     WebSocketService webSocketService{};
     HttpService httpService{};
     WebSocketServer server{};
-
 };

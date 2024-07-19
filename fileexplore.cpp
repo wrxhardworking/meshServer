@@ -2,8 +2,8 @@
 // Created by 28108 on 2024/7/16.
 //
 
-#include "FileExplore.h"
-#include "MyException.h"
+#include "fileexplore.h"
+#include "myexception.h"
 #include <SMESH_MESH.hxx>
 
 

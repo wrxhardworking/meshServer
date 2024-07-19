@@ -105,24 +105,21 @@ link_directories(${MYLIBRARY_DIR}/lib)
 #find_library(SalomeIDLGMSHPLUGIN_LIB SalomeIDLGMSHPLUGIN PATHS D:\\conda\\pkgs\\smesh-9.9.0.0-h27babe3_8\\Library\\lib)
 # 添加可执行文件
 add_executable(${PROJECT_NAME} main.cpp ${SRC_LIST}
-        FileExplore.cpp
-        MyException.h
-        ShapeExplore.cpp
-        ShapeExplore.h
-        MyLog.h
-        MeshExplore.h
-        MeshExplore.cpp
-        test/client_test.cpp
+        fileexplore.cpp
+        myexception.h
+        shapeexplore.cpp
+        shapeexplore.h
+        mylog.h
+        meshexplore.h
+        meshexplore.cpp
         mycontext.cpp
         mycontext.h
         server.cpp
         server.h
 )
+
 # 链接动态库
 target_link_libraries(${PROJECT_NAME}
-        #        ${GMSHEngine_LIB}
-        #        ${GMSHPluginGUI_LIB}
-        #        ${SalomeIDLGMSHPLUGIN_LIB}
         Geom.dll
         Kernel.dll
         Controls.dll

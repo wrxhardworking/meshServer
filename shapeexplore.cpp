@@ -9,7 +9,7 @@
   */
 
 #include <BRepTools.hxx>
-#include "ShapeExplore.h"
+#include "shapeexplore.h"
 
 #include <utility>
 

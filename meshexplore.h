@@ -10,7 +10,7 @@
 
 #pragma once
 
-#include "ShapeExplore.h"
+#include "shapeexplore.h"
 #include <SMESH_Mesh.hxx>
 #include <SMESH_Hypothesis.hxx>
 #include <SMESH_Algo.hxx>
