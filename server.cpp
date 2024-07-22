@@ -18,12 +18,17 @@ Server::Server(int port, int threadNum) {
     server.setThreadNum(threadNum);
     server.port = port;
 
-    //用于客户端测试
+    //用于客户端测试服务端的连通性
     httpService.GET("/ping", [](const HttpContextPtr &ctx) {
+        std::cout << "服务端正常" << std::endl;
         return ctx->send("pong");
     });
+    //http服务
+    httpService.POST("/smesh", [](const HttpContextPtr &ctx) {
+        return ctx->send("smesh");
+    });
 
-    //webSocket是基于一个长连接
+    //webSocket服务
     webSocketService.onopen = [](const WebSocketChannelPtr &channel, const HttpRequestPtr &req) {
         printf("onopen: GET %s\n", req->Path().c_str());
         //channel创建一个上下文事件

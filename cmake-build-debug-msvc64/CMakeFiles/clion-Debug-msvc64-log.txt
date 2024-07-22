@@ -14,6 +14,6 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 
 find successful
 find successful
--- Configuring done (1.6s)
--- Generating done (0.0s)
+-- Configuring done (2.1s)
+-- Generating done (0.1s)
 -- Build files have been written to: D:/c++projet/mesh_pro/cmake-build-debug-msvc64

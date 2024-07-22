@@ -6,11 +6,7 @@
 
 int main() {
     int port;
-
-    std::cin >> port;
-
-    Server server(port);
-
+    Server server(11122);
     server.start();
-
+    while (getchar() != '\n');
 }

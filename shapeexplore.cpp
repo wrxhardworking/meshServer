@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
   * @file           : ShapeExplore.cpp
-  * @author         : 28108
-  * @brief          : None
+  * @author         : ehan
+  * @brief          : 对occt中的TopoDS_Shape进行进一步管理
   * @attention      : None
   * @date           : 2024/7/16
   ******************************************************************************
@@ -17,6 +17,11 @@ ShapeExplore::ShapeExplore(TopoDS_Shape &shape) : shape(std::move(shape)) {
     if (!shape.IsNull())
         LogShapeType();
 
+    // 将点、面进行映射
+    TopExp::MapShapes(shape, TopAbs_FACE, mapOfFaces);
+    TopExp::MapShapes(shape, TopAbs_SOLID, mapOfSolid);
+    TopExp::MapShapes(shape, TopAbs_COMPOUND, mapOfCompound);
+    TopExp::MapShapes(shape, TopAbs_COMPSOLID, mapOfCompoundSolid);
 }
 
 void ShapeExplore::LogShapeType() {

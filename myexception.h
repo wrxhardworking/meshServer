@@ -16,9 +16,11 @@ class FileException : public std::exception {
 public:
     explicit FileException(const char *errorMessage) : errorMessage(errorMessage) {
     }
+
     virtual const char *what() const noexcept override {
         return errorMessage;
     }
+
 private:
     const char *errorMessage;
 };
