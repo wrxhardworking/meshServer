@@ -1,4 +1,5 @@
-D:\jet\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/jet/apps/CLion/ch-0/233.14475.31/bin/ninja/win/x64/ninja.exe -DCMAKE_TOOLCHAIN_FILE=D:\vcpkg\scripts\buildsystems\vcpkg.cmake -G Ninja -S D:\c++projet\mesh_pro -B D:\c++projet\mesh_pro\cmake-build-debug-msvc64
+D:\jet\apps\CLion\ch-0\233.14475.31\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=D:\vcpkg\scripts\buildsystems\vcpkg.cmake -S D:\c++projet\mesh_pro -B D:\c++projet\mesh_pro\cmake-build-debug-msvc64
+-- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.22631.
 -- Boost_INCLUDE_DIRS = E:/boost/boost_1_85_0.
 -- Boost_LIBRARIES = .
 -- Boost_LIB_VERSION = 1_85.
@@ -14,6 +15,6 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 
 find successful
 find successful
--- Configuring done (2.1s)
--- Generating done (0.1s)
+-- Configuring done (4.1s)
+-- Generating done (1.0s)
 -- Build files have been written to: D:/c++projet/mesh_pro/cmake-build-debug-msvc64

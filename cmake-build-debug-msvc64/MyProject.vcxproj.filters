@@ -4,18 +4,51 @@
     <ClCompile Include="D:\c++projet\mesh_pro\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\c++projet\mesh_pro\FileExplore.cpp">
+    <ClCompile Include="D:\c++projet\mesh_pro\fileexplore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\c++projet\mesh_pro\MyException.cpp">
+    <ClCompile Include="D:\c++projet\mesh_pro\shapeexplore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\c++projet\mesh_pro\meshexplore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\c++projet\mesh_pro\mycontext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\c++projet\mesh_pro\server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\c++projet\mesh_pro\meshmanger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\c++projet\mesh_pro\meshlog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\c++projet\mesh_pro\FileExplore.h">
+    <ClInclude Include="D:\c++projet\mesh_pro\myexception.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\c++projet\mesh_pro\MyException.h">
+    <ClInclude Include="D:\c++projet\mesh_pro\shapeexplore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\c++projet\mesh_pro\meshexplore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\c++projet\mesh_pro\mycontext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\c++projet\mesh_pro\server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\c++projet\mesh_pro\meshmanger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\c++projet\mesh_pro\meshalogo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\c++projet\mesh_pro\meshlog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

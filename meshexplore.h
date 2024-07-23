@@ -23,16 +23,17 @@
 
 class MeshExplore {
 public:
-    MeshExplore(std::unordered_map<std::string, std::string> map, TopoDS_Shape &shape, bool isDefault);
-
-private:
-    int count;
-
-    void initAlgoAndHyp();
+    MeshExplore(std::unordered_map<std::string, std::string> map, ShapeExplore &shapeExplore, bool isDefault = true);
 
     void startCompute();
 
-    TopoDS_Shape &shape;
+private:
+    //todo 很多操作要进行
+    void initAlgoAndHyp();
+
+    int count;
+
+    ShapeExplore &shapeExplore;
 
     std::shared_ptr<SMESH_Gen> genPtr;
 
@@ -48,5 +49,4 @@ private:
 
     //判断是否为默认选择
     bool isDefault;
-
 };

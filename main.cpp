@@ -1,7 +1,5 @@
-
-
-
 #include "server.h"
+#include "meshlog.h"
 #include <iostream>
 
 int main() {

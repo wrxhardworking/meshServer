@@ -22,7 +22,7 @@
 
 class ShapeExplore {
 public:
-    explicit ShapeExplore(TopoDS_Shape &shape);
+    explicit ShapeExplore(const TopoDS_Shape &shape);
 
     TopoDS_Shape &GetTopoDSShape() { return shape; }
 

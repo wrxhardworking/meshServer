@@ -19,11 +19,11 @@ class FileExplore {
 public:
     explicit FileExplore(std::string_view fileName) : fileName(fileName) {}
 
-    virtual TopoDS_Shape Input() = 0;
+    virtual TopoDS_Shape Input() { return {}; }
 
-    virtual void Output(std::shared_ptr<SMESH_Gen> genPtr) = 0;
+    virtual void Output(std::shared_ptr<SMESH_Gen> genPtr) {}
 
-    virtual void Output(std::shared_ptr<SMESH_Mesh> meshPtr) = 0;
+    virtual void Output(std::shared_ptr<SMESH_Mesh> meshPtr) {}
 
 protected:
     std::string fileName;

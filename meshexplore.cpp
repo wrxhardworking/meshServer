@@ -12,12 +12,12 @@
 #include <SMESH_Gen.hxx>
 #include <NETGENPlugin_NETGEN_2D3D.hxx>
 
-MeshExplore::MeshExplore(std::unordered_map<std::string, std::string> map, TopoDS_Shape &shape, bool isDefault) :
+MeshExplore::MeshExplore(std::unordered_map<std::string, std::string> map, ShapeExplore &shapeExplore, bool isDefault) :
         genPtr(new SMESH_Gen()),
         meshPtr(genPtr->CreateMesh(true)),
         map(std::move(map)),
         isDefault(isDefault),
-        shape(shape),
+        shapeExplore(shapeExplore),
         count(0) {
     initAlgoAndHyp();
 }
@@ -32,11 +32,11 @@ void MeshExplore::initAlgoAndHyp() {
 
 //fixme 遇到边面加密该怎么处理
 void MeshExplore::startCompute() {
-    meshPtr->ShapeToMesh(shape);
+    meshPtr->ShapeToMesh(shapeExplore.GetTopoDSShape());
     for (int i = 0; i < count; ++i) {
-        meshPtr->AddHypothesis(shape, i);
+        meshPtr->AddHypothesis(shapeExplore.GetTopoDSShape(), i);
     }
-    bool success = genPtr->Compute(*meshPtr, shape);
+    bool success = genPtr->Compute(*meshPtr, shapeExplore.GetTopoDSShape());
     if (success) {
         std::cout << "compute successful\n";
     } else {

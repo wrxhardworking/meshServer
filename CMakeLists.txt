@@ -109,13 +109,17 @@ add_executable(${PROJECT_NAME} main.cpp ${SRC_LIST}
         myexception.h
         shapeexplore.cpp
         shapeexplore.h
-        mylog.h
         meshexplore.h
         meshexplore.cpp
         mycontext.cpp
         mycontext.h
         server.cpp
         server.h
+        meshmanger.cpp
+        meshmanger.h
+        meshalogo.h
+        meshlog.cpp
+        meshlog.h
 )
 
 # 链接动态库
@@ -142,6 +146,9 @@ target_link_libraries(${PROJECT_NAME}
         ${OpenCASCADE_LIBRARIES}
         hv
 )
+#解决max冲突
+add_compile_definitions(NOMINMAX)
+add_compile_definitions(FILENAME)
 
 # 将DLL文件复制到输出目录
 #add_custom_command(TARGET MyExecutable POST_BUILD

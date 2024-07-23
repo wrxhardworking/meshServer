@@ -13,7 +13,7 @@
 
 #include <utility>
 
-ShapeExplore::ShapeExplore(TopoDS_Shape &shape) : shape(std::move(shape)) {
+ShapeExplore::ShapeExplore(const TopoDS_Shape &shape) : shape(std::move(shape)) {
     if (!shape.IsNull())
         LogShapeType();
 

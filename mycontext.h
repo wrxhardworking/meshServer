@@ -13,17 +13,24 @@
 #include "hv/EventLoop.h"
 #include "hv/htime.h"
 #include "hv/hfile.h"
-#include "unordered_map"
+#include "meshmanger.h"
+
+#include <unordered_map>
+
 
 using namespace hv;
 
 class MyContext {
 public:
-    std::string handleStep(const std::string &msg);
+    MyContext();
+
+    const char* handleStep(const std::string &msg);
 
     std::string handleElse(const std::string &msg);
 
 private:
     TimerID timerID;
+
+    MeshManger meshManger;
 
 };
