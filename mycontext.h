@@ -13,6 +13,7 @@
 #include "hv/EventLoop.h"
 #include "hv/htime.h"
 #include "hv/hfile.h"
+#include "hv/json.hpp"
 #include "meshmanger.h"
 
 #include <unordered_map>
@@ -32,5 +33,5 @@ private:
     TimerID timerID;
 
     MeshManger meshManger;
-
+    Json json;
 };

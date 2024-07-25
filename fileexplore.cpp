@@ -10,7 +10,6 @@
 TopoDS_Shape Step::Input() {
     TopoDS_Shape shape;
     STEPControl_Reader aReader_Step;
-
     auto status = aReader_Step.ReadFile(fileName.c_str());
     if (status != IFSelect_RetDone) {
         throw FileException("the step file open error");

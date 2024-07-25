@@ -25,9 +25,9 @@ public:
 
 private:
     //fixme 存储来自json的数据
-    std::unordered_map<std::string, std::string> map;
-    MeshExplore meshExplore;
-    ShapeExplore shapeExplore;
     Step step;
+    ShapeExplore shapeExplore;
+    MeshExplore meshExplore;
     std::string url;
+    std::unordered_map<std::string, std::string> map{};
 };

@@ -13,6 +13,7 @@
 #include "hv/hfile.h"
 #include "server.h"
 #include "mycontext.h"
+#include "myexception.h"
 
 Server::Server(int port, int threadNum) {
     server.setThreadNum(threadNum);
@@ -20,19 +21,20 @@ Server::Server(int port, int threadNum) {
 
     //用于客户端测试服务端的连通性
     httpService.GET("/ping", [](const HttpContextPtr &ctx) {
-        std::cout << "服务端正常" << std::endl;
         return ctx->send("pong");
     });
     //http服务
     httpService.POST("/smesh", [](const HttpContextPtr &ctx) {
         return ctx->send("smesh");
     });
-
     //webSocket服务
     webSocketService.onopen = [](const WebSocketChannelPtr &channel, const HttpRequestPtr &req) {
-        printf("onopen: GET %s\n", req->Path().c_str());
-        //channel创建一个上下文事件
-        channel->newContextPtr<MyContext>();
+        try {
+            auto ctx = channel->newContextPtr<MyContext>();
+        } catch (const std::exception &e) {
+            channel->send(e.what());
+            channel->close();
+        }
     };
     webSocketService.onmessage = [](const WebSocketChannelPtr &channel, const std::string &msg) {
         //调用回调 处理

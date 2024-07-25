@@ -13,7 +13,6 @@
 MeshManger::MeshManger(std::string_view fileName) :
         step(fileName),
         shapeExplore(step.Input()),
-        //prifix 也能设置一个宏定义
         meshExplore(map, shapeExplore),
         url("/prefix") {
     url += fileName;
@@ -25,7 +24,7 @@ const char *MeshManger::StartMesh() {
         meshExplore.startCompute();
     }
     catch (std::exception &e) {
-        std::cout << e.what();
+        return e.what();
     }
     return url.c_str();
 }
