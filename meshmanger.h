@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
   * @file           : meshmanger.h
-  * @author         : 28108
-  * @brief          : None
+  * @author         : ethan
+  * @brief          : manage mesh process
   * @attention      : None
   * @date           : 2024/7/22
   ******************************************************************************
@@ -16,12 +16,16 @@
 
 #include <string_view>
 
+//std::string urlPrefix("");
+
 class MeshManger {
 public:
     //文件名应该是依靠一个宏定来定义
     explicit MeshManger(std::string_view fileName);
 
     const char *StartMesh();
+
+    static std::string urlPrefix;
 
 private:
     //fixme 存储来自json的数据
@@ -31,3 +35,5 @@ private:
     std::string url;
     std::unordered_map<std::string, std::string> map{};
 };
+
+

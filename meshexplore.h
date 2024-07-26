@@ -1,9 +1,9 @@
 /**
   ******************************************************************************
   * @file           : MeshExplore.h
-  * @author         : 28108
-  * @brief          : 完成mesh和gen的各种工作
-  * @attention      : None
+  * @author         : ethan
+  * @brief          : use of mesh and gen
+  * @attention      : region operation
   * @date           : 2024/7/17
   ******************************************************************************
   */

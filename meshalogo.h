@@ -1,7 +1,7 @@
 /**
   ******************************************************************************
   * @file           : meshalogo.h
-  * @author         : 28108
+  * @author         : ethan
   * @brief          : None
   * @attention      : None
   * @date           : 2024/7/23

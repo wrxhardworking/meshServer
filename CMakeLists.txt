@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 # 项目名称
-project(MyProject)
+project(MeshServer)
 # 指定C++标准
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,6 +11,7 @@ set(MYLIBRARY_DIR "D:\\conda\\pkgs\\smesh-9.9.0.0-h27babe3_8\\Library")
 
 option(ENABLE_NETGEN "Enable Netgen" ON)
 option(ENABLE_TEST "enable test" ON)
+option(ENABLE_DAEMON "enable test" TRUE)
 
 add_definitions(-D_USE_MATH_DEFINES)
 
@@ -146,9 +147,12 @@ target_link_libraries(${PROJECT_NAME}
         ${OpenCASCADE_LIBRARIES}
         hv
 )
-#解决max冲突
+# fixme 很重要解决max冲突
 add_compile_definitions(NOMINMAX)
-add_compile_definitions(FILENAME)
+
+if (ENABLE_DAEMON)
+    add_subdirectory(daemon)
+endif ()
 
 # 将DLL文件复制到输出目录
 #add_custom_command(TARGET MyExecutable POST_BUILD

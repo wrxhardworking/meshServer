@@ -1,13 +1,3 @@
-/**
-  ******************************************************************************
-  * @file           : ShapeExplore.cpp
-  * @author         : ehan
-  * @brief          : 对occt中的TopoDS_Shape进行进一步管理
-  * @attention      : None
-  * @date           : 2024/7/16
-  ******************************************************************************
-  */
-
 #include <BRepTools.hxx>
 #include "shapeexplore.h"
 

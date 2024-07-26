@@ -1,21 +1,11 @@
-/**
-  ******************************************************************************
-  * @file           : meshmanger.cpp
-  * @author         : 28108
-  * @brief          : None
-  * @attention      : None
-  * @date           : 2024/7/22
-  ******************************************************************************
-  */
-
 #include "meshmanger.h"
 
 MeshManger::MeshManger(std::string_view fileName) :
         step(fileName),
         shapeExplore(step.Input()),
-        meshExplore(map, shapeExplore),
-        url("/prefix") {
-    url += fileName;
+        meshExplore(map, shapeExplore) {
+    url.append(urlPrefix);
+    url.append(fileName);
 }
 
 const char *MeshManger::StartMesh() {
@@ -28,3 +18,5 @@ const char *MeshManger::StartMesh() {
     }
     return url.c_str();
 }
+
+std::string MeshManger::urlPrefix;

@@ -1,3 +1,0 @@
-D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/MyProject.dir
-D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/ALL_BUILD.dir
-D:/c++projet/mesh_pro/cmake-build-debug-msvc64/CMakeFiles/ZERO_CHECK.dir
