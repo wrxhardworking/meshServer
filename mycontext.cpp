@@ -1,7 +1,7 @@
 #include "mycontext.h"
 
-// fixme  不能这么做否则连接不上
-MyContext::MyContext() : meshManger("../../filename") { std::cout << "Mycontext 已经构造\n"; }
+// fixme  不能这么做否则连接不上 测试版本
+MyContext::MyContext() : meshManger(R"(.\test.step)") { std::cout << "Mycontext 已经构造\n"; }
 
 const char *MyContext::handleStep(const std::string &msg) {
     //fixme

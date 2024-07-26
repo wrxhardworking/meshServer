@@ -25,7 +25,7 @@ class MeshExplore {
 public:
     MeshExplore(std::unordered_map<std::string, std::string> map, ShapeExplore &shapeExplore, bool isDefault = true);
 
-    void startCompute();
+    void startCompute(std::string &meshFileSaveTo);
 
 private:
     //todo 很多操作要进行

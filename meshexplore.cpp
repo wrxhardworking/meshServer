@@ -49,7 +49,7 @@ void MeshExplore::initAlgoAndHyp() {
 }
 
 //fixme 遇到边面加密该怎么处理
-void MeshExplore::startCompute() {
+void MeshExplore::startCompute(std::string &meshFileSaveTo) {
     meshPtr->ShapeToMesh(shapeExplore.GetTopoDSShape());
     for (int i = 0; i < count; ++i) {
         meshPtr->AddHypothesis(shapeExplore.GetTopoDSShape(), i);
@@ -57,6 +57,9 @@ void MeshExplore::startCompute() {
     bool success = genPtr->Compute(*meshPtr, shapeExplore.GetTopoDSShape());
     if (success) {
         std::cout << "compute successful\n";
+        size_t index = meshFileSaveTo.rfind('.');
+        meshFileSaveTo.replace(index + 1, meshFileSaveTo.size(), "unv");
+        meshPtr->ExportUNV(meshFileSaveTo.c_str());
     } else {
         //fixme 什么时候抛出异常
         std::cout << "compute failed\n";

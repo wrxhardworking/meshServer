@@ -30,7 +30,7 @@ public:
     std::string handleElse(const std::string &msg);
 
 private:
-    TimerID timerID;
+    TimerID timerID{};
 
     MeshManger meshManger;
     Json json;
