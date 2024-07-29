@@ -23,6 +23,8 @@
 
 class FileExplore {
 public:
+    FileExplore() = default;
+
     explicit FileExplore(std::string_view fileName) : fileName(fileName) {}
 
     virtual TopoDS_Shape Input() { return {}; }
@@ -39,6 +41,7 @@ protected:
 //输入文件：stp或者step文件格式
 class Step : public FileExplore {
 public:
+    Step() = default;
     //委托构造
     explicit Step(std::string_view fileName) : FileExplore(fileName) {}
 

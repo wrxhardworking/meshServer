@@ -22,6 +22,8 @@
 
 class ShapeExplore {
 public:
+    ShapeExplore() = default;
+
     explicit ShapeExplore(const TopoDS_Shape &shape);
 
     TopoDS_Shape &GetTopoDSShape() { return shape; }

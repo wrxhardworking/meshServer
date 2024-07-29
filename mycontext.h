@@ -23,15 +23,14 @@ using namespace hv;
 
 class MyContext {
 public:
-    MyContext();
+    MyContext() = default;
 
-    const char* handleStep(const std::string &msg);
+    const char *handleStep(const std::string &msg);
 
     std::string handleElse(const std::string &msg);
 
 private:
     TimerID timerID{};
-
     MeshManger meshManger;
     Json json;
 };

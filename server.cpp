@@ -19,20 +19,21 @@ Server::Server(int port, int threadNum) {
     });
     //webSocket服务
     webSocketService.onopen = [](const WebSocketChannelPtr &channel, const HttpRequestPtr &req) {
+        auto ctx = channel->newContextPtr<MyContext>();
+    };
+    webSocketService.onmessage = [](const WebSocketChannelPtr &channel, const std::string &msg) {
+        //调用回调 处理
         try {
-            auto ctx = channel->newContextPtr<MyContext>();
+            std::string returnUrl = channel->getContextPtr<MyContext>()->handleStep(msg);
+            channel->send(returnUrl);
         } catch (const std::exception &e) {
             channel->send(e.what());
             channel->close();
         }
     };
-    webSocketService.onmessage = [](const WebSocketChannelPtr &channel, const std::string &msg) {
-        //调用回调 处理
-        std::string returnUrl = channel->getContextPtr<MyContext>()->handleStep(msg);
-        channel->send(returnUrl);
-    };
     webSocketService.onclose = [](const WebSocketChannelPtr &channel) {
-        std::cout << "say good bye\n" << std::endl;
+        if (channel->isConnected())
+            channel->close();
     };
 
     server.registerHttpService(&httpService);

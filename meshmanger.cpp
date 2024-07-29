@@ -8,15 +8,10 @@ MeshManger::MeshManger(std::string_view fileName) :
     url.append(fileName);
 }
 
-const char *MeshManger::StartMesh() {
+const char *MeshManger::startMesh() {
     //fixme
-    try {
-        //注意这里传进去的是引用 url的后缀已经改变 "/../../shape.step -> /../../shape.unv"
-        meshExplore.startCompute(url);
-    }
-    catch (std::exception &e) {
-        return e.what();
-    }
+    //注意这里传进去的是引用 url的后缀已经改变 "/../../shape.step -> /../../shape.unv"
+    meshExplore.startCompute(url);
     return url.c_str();
 }
 

@@ -23,7 +23,9 @@ public:
     //文件名应该是依靠一个宏定来定义
     explicit MeshManger(std::string_view fileName);
 
-    const char *StartMesh();
+    MeshManger() = default;
+
+    const char *startMesh();
 
     static std::string urlPrefix;
 

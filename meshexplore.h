@@ -23,6 +23,8 @@
 
 class MeshExplore {
 public:
+    MeshExplore() = default;
+
     MeshExplore(std::unordered_map<std::string, std::string> map, ShapeExplore &shapeExplore, bool isDefault = true);
 
     void startCompute(std::string &meshFileSaveTo);
@@ -33,7 +35,7 @@ private:
 
     int count;
 
-    ShapeExplore &shapeExplore;
+    ShapeExplore shapeExplore;
 
     std::shared_ptr<SMESH_Gen> genPtr;
 
